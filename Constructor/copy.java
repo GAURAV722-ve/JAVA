@@ -13,7 +13,7 @@ class A{
 
 public class copy {
     public static void main(String[] args) {
-        A r = new A();
-        A r1 = new A(r);
+        A ref = new A();
+        A x = new A(ref);
     }
 } 
