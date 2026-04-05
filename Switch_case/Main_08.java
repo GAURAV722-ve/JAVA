@@ -30,5 +30,6 @@ public class Main_08 {
             default:
                 System.out.println("Default");
         }
+        S.close();
     }
 }
