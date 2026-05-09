@@ -11,3 +11,6 @@ public class Main_01 {
         T1.start();
     }
 }
+
+// T1.start() --> JVM asks os to create a new thread --> Thread gets Stack/PC space
+// Thread execute run().
