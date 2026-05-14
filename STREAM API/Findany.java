@@ -5,7 +5,7 @@ public class Findany {
         List<String> list = Arrays.asList("Arvind", "Gaurav", "Abhi", "Anupam", "Durgesh","Harsh");
 
         Optional<String> name = list.stream()
-                .filter(n -> n.startsWith("Z"))
+                .filter(n -> n.startsWith("A"))
                 .findAny();
 
         // System.out.println(name.get());
