@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 interface client{
-    int a = 22;
     void input();
     void output();
 }
