@@ -2,27 +2,22 @@ import java.util.Scanner;
 
 public class prime_no{
 
-    public static boolean isprime(int n){
+    public static String isprime(int n){
         if(n<=1){
-            return false;
+            return "Not prime";
         }
         for(int i=2; i*i<=n; i++){
             if(n%i==0){
-                return false;
+                return "Not prime";
             }
         }
-        return true;
+        return "Prime";
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number : ");
         int n=sc.nextInt();
-
-        if(isprime(n)){
-            System.out.println("Yes it is prime number.");
-        }else{
-            System.out.println("No it is not prime number.");
-        }
+        System.out.println(isprime(n));
         sc.close();
     }
 }
