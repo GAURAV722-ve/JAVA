@@ -1,19 +1,32 @@
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Spliterator;
+import java.util.Collection;
+import java.util.Iterator;
 
-public class Main_02 {
+public class Main_02{
     public static void main(String[] args) {
-        // Spliterator interface
-        List<Integer> list = new ArrayList<>();
-        list.add(10);
-        list.add(20);
-        list.add(30);
-        list.add(40);
-        list.add(50);
-        Spliterator<Integer> sp = list.spliterator();
-        sp.tryAdvance(n->System.out.println(n));
-        System.out.println("Remaining Elements");
-        sp.forEachRemaining(n->System.out.print(n+" "));
+        Collection<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        System.out.println(list);
+
+        // Enhance for each loop
+        for(Integer i:list){
+            System.out.print(i+" ");
+        }
+        System.out.println("");
+
+        // For each method
+        list.forEach(n-> System.out.print(n+" "));
+        System.out.println("");
+        
+        // Iterator interface
+        Iterator<Integer> itr = list.iterator();
+        while (itr.hasNext()) {
+            System.out.print(itr.next() + " ");
+        }
     }
 }

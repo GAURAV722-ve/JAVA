@@ -16,7 +16,7 @@ public class Main_09 {
         try{
             Thread.sleep(2000);
         }
-        catch(Exception e){
+        catch(InterruptedException e){
             System.out.println(e.getMessage());
         }
 

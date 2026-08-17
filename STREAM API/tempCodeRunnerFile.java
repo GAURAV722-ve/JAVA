@@ -1,0 +1,1 @@
+.forEach(System.out::println);

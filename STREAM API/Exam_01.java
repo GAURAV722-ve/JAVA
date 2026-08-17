@@ -10,6 +10,7 @@ public class Exam_01 {
         list.add(31);
         list.stream()
             .filter(n->n%2==0)
-            .forEach(n->System.out.println(n));
+            .forEach(System.out::println);
+            // .forEach(n->System.out.println(n));
     }
 }
